@@ -684,14 +684,11 @@ button { color: inherit; font: inherit; }
   .hero__shape { width: clamp(160px, 22vw, 280px); }
   .about__grid,
   .services__heading,
-  .process__intro {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
+  .process__intro { gap: 3rem; }
   .display { font-size: clamp(2.8rem, 5.2vw, 4.6rem); }
   .statement {
     margin-top: 6rem;
-    text-align: left;
+    text-align: center;
     font-size: clamp(2.8rem, 6vw, 5.2rem);
   }
   .services__heading { margin-bottom: 4rem; }
