@@ -558,12 +558,34 @@ button { color: inherit; font: inherit; }
 .process { background: #dedbd5; }
 .process__intro { display: grid; grid-template-columns: 1fr 0.45fr; align-items: end; gap: 6vw; }
 .process__intro p { max-width: 390px; margin: 0; font-size: 1.1rem; line-height: 1.6; }
-.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin: 7rem 0 0; padding: 0; list-style: none; background: rgba(65,65,65,.2); }
-.steps li { min-height: 300px; padding: 1.5rem; background: #dedbd5; transition: background 0.35s, color 0.35s; }
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin: 7rem 0 0;
+  padding: 0;
+  list-style: none;
+  background: transparent;
+}
+.steps li {
+  min-height: 300px;
+  padding: 1.5rem;
+  border: 1px solid rgba(65, 65, 65, 0.18);
+  background: #dedbd5;
+  transition:
+    background 0.35s,
+    color 0.35s,
+    opacity 0.9s var(--ease),
+    transform 0.9s var(--ease);
+}
 .steps li:hover { background: var(--terracotta); color: var(--paper); }
 .steps li > span { font-size: 0.7rem; }
 .steps h3 { margin: 7rem 0 1rem; font: 600 clamp(1.5rem, 2vw, 2.2rem) "Syne"; letter-spacing: -0.04em; }
 .steps p { margin: 0; font-size: 0.9rem; line-height: 1.5; }
+.steps li.reveal.is-visible:nth-child(1) { transition-delay: 0s; }
+.steps li.reveal.is-visible:nth-child(2) { transition-delay: 0.12s; }
+.steps li.reveal.is-visible:nth-child(3) { transition-delay: 0.24s; }
+.steps li.reveal.is-visible:nth-child(4) { transition-delay: 0.36s; }
 
 .contact {
   position: relative;
