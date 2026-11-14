@@ -588,13 +588,30 @@ button { color: inherit; font: inherit; }
 
 @media (max-width: 800px) {
   .cursor { display: none; }
-  .hero { min-height: 850px; }
+  .hero {
+    min-height: 100svh;
+    justify-content: flex-end;
+    padding: 5.5rem var(--pad) 1.5rem;
+  }
+  .hero__eyebrow {
+    margin: 0 0 1.25rem;
+  }
   .hero__eyebrow span:last-child { display: none; }
-  .hero__title { font-size: clamp(3.35rem, 12vw, 6rem); line-height: 0.84; }
+  .hero__title { font-size: clamp(2.8rem, 11vw, 5.2rem); line-height: 0.86; }
   .hero__title .line--offset { padding-left: 0; }
-  .hero__bottom { align-items: center; margin-top: 3rem; }
+  .hero__bottom {
+    align-items: center;
+    width: 100%;
+    margin-top: 1.25rem;
+    margin-left: 0;
+  }
   .hero__bottom p { max-width: 230px; }
-  .round-link { width: 85px; height: 85px; }
+  .round-link { width: 72px; height: 72px; }
+  .hero__shape {
+    top: 22%;
+    width: clamp(140px, 42vw, 240px);
+    opacity: 0.09;
+  }
   .about__grid, .services__heading, .process__intro { grid-template-columns: 1fr; }
   .about__grid, .services__heading { gap: 3rem; }
   .statement { text-align: left; }
@@ -615,11 +632,15 @@ button { color: inherit; font: inherit; }
 }
 
 @media (max-width: 480px) {
-  .brand { width: 74px; }
+  .brand { width: 58px; }
   .menu__links a { font-size: 2.6rem; }
   .menu__links span { width: 2rem; }
   .menu__footer { flex-direction: column; gap: 0.6rem; }
-  .hero__bottom p { max-width: 210px; font-size: 0.9rem; }
+  .hero { padding: 5rem var(--pad) 1.25rem; }
+  .hero__title { font-size: clamp(2.55rem, 12.5vw, 3.4rem); }
+  .hero__bottom { margin-top: 1rem; gap: 0.75rem; }
+  .hero__bottom p { max-width: 190px; font-size: 0.88rem; }
+  .round-link { width: 64px; height: 64px; }
   .display { font-size: 3.1rem; }
   .statement { font-size: 3.15rem; }
   .service__name { font-size: 1.35rem; }
