@@ -657,6 +657,13 @@ button { color: inherit; font: inherit; }
 .footer > div:not(:first-child) { display: flex; flex-direction: column; gap: 0.6rem; }
 .footer > div > span { color: #777; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; }
 .footer small { grid-column: 1 / -1; margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid #414141; color: #777; }
+.footer__credit {
+  grid-column: 1 / -1;
+  margin: 0.35rem 0 0;
+  color: #5c5c5c;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+}
 
 .reveal { opacity: 0; transform: translateY(45px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
 .reveal.is-visible { opacity: 1; transform: none; }
@@ -806,7 +813,7 @@ button { color: inherit; font: inherit; }
   .steps li { min-height: 220px; }
   .steps h3 { margin-top: 3.5rem; }
   .footer { grid-template-columns: 1fr; }
-  .footer__brand, .footer small { grid-column: auto; }
+  .footer__brand, .footer small, .footer__credit { grid-column: auto; }
 }
 
 @media (max-width: 360px) {
