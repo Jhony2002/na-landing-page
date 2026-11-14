@@ -206,14 +206,14 @@ button { color: inherit; font: inherit; }
   position: relative;
   z-index: 22;
   display: flex;
-  width: clamp(56px, 8vw, 72px);
+  width: clamp(84px, 14vw, 112px);
   align-items: center;
 }
 .brand img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 8px;
   object-fit: cover;
 }
 .menu-toggle {
@@ -589,12 +589,12 @@ button { color: inherit; font: inherit; }
 @media (max-width: 800px) {
   .cursor { display: none; }
   .hero {
-    min-height: 100svh;
-    justify-content: flex-end;
-    padding: 5.5rem var(--pad) 1.5rem;
+    min-height: 0;
+    justify-content: flex-start;
+    padding: 5.25rem var(--pad) 2rem;
   }
   .hero__eyebrow {
-    margin: 0 0 1.25rem;
+    margin: 0 0 1rem;
   }
   .hero__eyebrow span:last-child { display: none; }
   .hero__title { font-size: clamp(2.8rem, 11vw, 5.2rem); line-height: 0.86; }
@@ -602,15 +602,15 @@ button { color: inherit; font: inherit; }
   .hero__bottom {
     align-items: center;
     width: 100%;
-    margin-top: 1.25rem;
+    margin-top: 1.1rem;
     margin-left: 0;
   }
   .hero__bottom p { max-width: 230px; }
   .round-link { width: 72px; height: 72px; }
   .hero__shape {
-    top: 22%;
-    width: clamp(140px, 42vw, 240px);
-    opacity: 0.09;
+    top: 18%;
+    width: clamp(120px, 38vw, 220px);
+    opacity: 0.08;
   }
   .about__grid, .services__heading, .process__intro { grid-template-columns: 1fr; }
   .about__grid, .services__heading { gap: 3rem; }
@@ -632,13 +632,13 @@ button { color: inherit; font: inherit; }
 }
 
 @media (max-width: 480px) {
-  .brand { width: 58px; }
+  .brand { width: 88px; }
   .menu__links a { font-size: 2.6rem; }
   .menu__links span { width: 2rem; }
   .menu__footer { flex-direction: column; gap: 0.6rem; }
-  .hero { padding: 5rem var(--pad) 1.25rem; }
-  .hero__title { font-size: clamp(2.55rem, 12.5vw, 3.4rem); }
-  .hero__bottom { margin-top: 1rem; gap: 0.75rem; }
+  .hero { padding: 4.75rem var(--pad) 1.75rem; }
+  .hero__title { font-size: clamp(2.45rem, 12vw, 3.2rem); }
+  .hero__bottom { margin-top: 0.9rem; gap: 0.75rem; }
   .hero__bottom p { max-width: 190px; font-size: 0.88rem; }
   .round-link { width: 64px; height: 64px; }
   .display { font-size: 3.1rem; }
