@@ -163,7 +163,7 @@ if (window.matchMedia("(pointer: fine)").matches && !prefersReducedMotion) {
   window.addEventListener(
     "scroll",
     () => {
-      shape.style.transform = `translateY(${window.scrollY * 0.12}px)`;
+      shape.style.transform = `translateX(18%) translateY(${window.scrollY * 0.12}px)`;
     },
     { passive: true }
   );
