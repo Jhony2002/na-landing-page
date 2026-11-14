@@ -777,14 +777,6 @@ button { color: inherit; font: inherit; }
   .contact h2 { font-size: clamp(2rem, 10vw, 2.7rem); }
 }
 
-@media (max-width: 800px) and (min-height: 720px) {
-  .hero {
-    min-height: 100svh;
-    min-height: 100dvh;
-  }
-  .hero__bottom { margin-top: auto; padding-top: 1.5rem; }
-}
-
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; }
